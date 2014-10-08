@@ -5,7 +5,7 @@ from django.contrib import admin
 admin.autodiscover()
 
 # django rest framework
-from models import User, Device
+from users.models import User, Device
 from rest_framework import routers, serializers, viewsets
 
 
