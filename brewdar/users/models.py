@@ -2,14 +2,14 @@ from django.db import models
 
 
 class User(models.Model):
-    email = models.EmailField()
+    email = models.EmailField(unique=True)
 
     def __unicode__(self):
         return self.email
 
 
 class Device(models.Model):
-    device_id = models.CharField(max_length=100)
+    device_id = models.CharField(max_length=100, unique=True)
     name = models.CharField(max_length=100)
     verification_token = models.CharField(max_length=16)
     verified = models.BooleanField()
