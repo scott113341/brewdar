@@ -94,3 +94,12 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
     ]
 }
+
+
+# Django Push Notifications
+# https://github.com/jleclanche/django-push-notifications
+
+PUSH_NOTIFICATIONS_SETTINGS = {
+    "GCM_API_KEY": "AIzaSyBSZz_dDbhmUS7bvsVXriZAvJN6Vhah3RU",
+    "APNS_CERTIFICATE": "/path/to/your/certificate.pem",
+}
